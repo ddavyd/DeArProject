@@ -6,8 +6,11 @@
     margin: 0 auto;
 
 }
+
+@import 'base/variables';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/title';
 @import 'blocks/about';
+@import 'blocks/works';

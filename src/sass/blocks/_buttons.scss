@@ -8,7 +8,11 @@
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin: 0 auto;
     &:hover {
+        background-color: #00897b;
+    }
+    &_green {
         background-color: #00897b;
     }
 }
