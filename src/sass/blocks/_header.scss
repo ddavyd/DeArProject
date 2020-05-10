@@ -11,15 +11,18 @@
 		list-style-type: none;
 		li {
 			margin-left: 40px;
-			color: #212121;
 			font-size: 20px;
 			font-weight: 400;
 		}
-	}
+	}	
 	&__logo {
 		img {
 			height: 100%;
 		}
+	}
+	&__link {
+		color: #212121;
+		text-decoration: none;
 	}
 }
 
