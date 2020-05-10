@@ -1,5 +1,5 @@
 .about {
-    min-height: 672px;
+    max-height: 672px;
     padding: 125px 0 125px 0;
     &__items {
         display: flex;
@@ -25,7 +25,6 @@
         color: #212121;
         font-size: 15px;
         font-weight: 400;
-        
         letter-spacing: 0.75px;
     }
    
