@@ -1,7 +1,18 @@
 .services {
     background-color: #e4fdf9;
     padding: 120px 0 120px 0;
-
+    &__img {
+        display: block;
+        &_white {
+            display: none;
+            &-show {
+                display: block;
+            }
+        }
+        &_none {
+            display: none;
+        }
+    }
     &__block {
         margin-top: 112px;
         display: flex;
