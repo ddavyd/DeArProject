@@ -49,8 +49,32 @@ $(document).ready(function(){
        
     }) */
     
-}); 
-     
+   /*  $('.button').on('click', () => {
+        $('.overlay').toggleClass('overlay_active')
+        $('.modal').toggleClass('modal_active')
+    })
+}); */ 
 
+const btn = document.querySelectorAll('.button'),
+        overlay = document.querySelector('.overlay'),
+        modal = document.querySelector('.modal'),
+        close = document.querySelectorAll('.modal__close');
+ 
+        function modalAdd(items){
+            items.forEach((item) => {
+                item.addEventListener('click', () => {
+                    modal.classList.toggle('modal_active');
+                    overlay.classList.toggle('overlay_active');
+                });
+            });
+        };
+        modalAdd(btn);
+        modalAdd(close);
+        
+
+
+
+
+});
 
     

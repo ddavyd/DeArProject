@@ -4,6 +4,10 @@
     height: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.56);
+    display: none;
+    &_active {
+        display: block;
+    }
 }
 .modal {
     position: absolute;
@@ -14,6 +18,10 @@
     min-height: 400px;
     background-color: #f2f2f2;
     padding: 38px 40px 40px 40px;
+    display: none;
+    &_active {
+        display: block;
+    }
     &__close {
        position: absolute;
        top: 0;
