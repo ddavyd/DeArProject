@@ -48,7 +48,7 @@ $(document).ready(function(){
         $('.services__img_white').toggleClass('services__img_white-show');  
        
     }) */
-    
+ 
 }); 
      
 
