@@ -55,24 +55,34 @@ $(document).ready(function(){
     })
 }); */ 
 
-const btn = document.querySelectorAll('.button'),
-        overlay = document.querySelector('.overlay'),
-        modal = document.querySelector('.modal'),
-        close = document.querySelectorAll('.modal__close');
+let btn = document.querySelectorAll('.button'),
+                overlay = document.querySelector('.overlay'),
+                modal = document.querySelector('.modal'),
+                close = document.querySelectorAll('.modal__close');
  
-        function modalAdd(items){
+        function modalAdd(items) {
             items.forEach((item) => {
                 item.addEventListener('click', () => {
-                    modal.classList.toggle('modal_active');
                     overlay.classList.toggle('overlay_active');
-                });
-            });
-        };
-        modalAdd(btn);
-        modalAdd(close);
+                    modal.classList.toggle('modal_active');
+                })
+            })
+        }
+     modalAdd(btn);
+     modalAdd(close);
+
+     /* $('.button').on('click', () =>{
+         $('.overlay').fadeToggle('overlay_active');
+         $('.modal').fadeToggle('modal_active');
+     })
+     
+     $('.modal__close').on('click', () =>{
+        $('.overlay').fadeToggle('overlay_active');
+        $('.modal').fadeToggle('modal_active');
+    })  */
+
+
         
-
-
 
 
 });
