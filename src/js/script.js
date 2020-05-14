@@ -102,7 +102,7 @@ $(document).ready(function(){
         });
     }
     errorForm($('#consultation form'));
-    errorForm($('#order form'));
+    errorForm($('#contacts__form'));
     errorForm($('#consultation-form'));
 
     $('input[name=phone]').mask("+7(999) 999-99-99");
