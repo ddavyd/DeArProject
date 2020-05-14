@@ -36,4 +36,8 @@
     &_green {
         background-color: #00897b;
     }
+    &_submit {
+        display: flex;
+        justify-content: end;
+    }
 }
