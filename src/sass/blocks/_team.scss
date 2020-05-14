@@ -1,0 +1,14 @@
+.team {
+    max-height: 1190px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 122px 0 265px 0;
+    }
+    &__img {
+        width: 370px;
+        height: 320px;
+        
+    }
+    
+}

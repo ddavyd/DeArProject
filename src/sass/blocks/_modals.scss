@@ -15,10 +15,11 @@
     left: 50%;
     transform: translate(- 50%, -50%);
     width: 380px;
-    min-height: 400px;
+    min-height: 350px;
     background-color: #f2f2f2;
-    padding: 38px 40px 40px 40px;
+    padding: 38px 40px 20px 40px;
     display: none;
+    border-radius: 10px;
 
     &_active {
         display: block;
@@ -45,6 +46,8 @@
     }
     &__descr {
         text-align: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
     .feed-form {
         display: flex;
@@ -54,10 +57,20 @@
         height: 300px;
         input{
             margin-bottom: 5px;
+            padding-left: 15px;
+            height: 30px;
         }
     }
-    .consultation-form__items{
+    &__items{
         display: flex;
         flex-direction: column;
     }
-} 
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

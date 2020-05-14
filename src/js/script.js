@@ -14,11 +14,11 @@ $(document).ready(function(){
     function toggle(elems) {
         elems.forEach((elem, i) => {
             elem.addEventListener('click', (e) => {
-                e.preventDefault()
+                e.preventDefault();
                 content[i].classList.toggle('works-item__content_active');
                 list[i].classList.toggle('works-item__list_active');
-            })
-         })
+            });
+         });
     }
     toggle(more);
     toggle(back);
@@ -32,14 +32,14 @@ $(document).ready(function(){
             elem.addEventListener('mouseover',  () => {
                 img[i].classList.toggle('services__img_none');
                 imgWhite[i].classList.toggle('services__img_white-show');
-            })
-        })
+            });
+        });
         elems.forEach((elem, i) => {
             elem.addEventListener('mouseout', () => {
                 img[i].classList.toggle('services__img_none');
                 imgWhite[i].classList.toggle('services__img_white-show');
-            })
-        })
+            });
+        });
     }
     switchWhite(item);
  // недописанный jquery
@@ -72,14 +72,14 @@ $(document).ready(function(){
      modalAdd(close); */
 
      $('.button').on('click', () =>{
-         $('.overlay').fadeToggle('overlay_active');
-         $('.modal').fadeToggle('modal_active');
-     })
+         $('.overlay').fadeIn('overlay_active');
+         $('.modal').fadeIn('modal_active');
+     });
      
      $('.modal__close').on('click', () =>{
-        $('.overlay').fadeToggle('overlay_active');
-        $('.modal').fadeToggle('modal_active');
-    }) 
+        $('.overlay').fadeOut('overlay_active');
+        $('.modal').fadeOut('modal_active');
+    });
 
     function errorForm(elems){
         $(elems).validate({
@@ -107,13 +107,7 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+7(999) 999-99-99");
         
-     });    
-/* 
-     $('.button_submit').on('click', () => {
-         alert("1");
-     }); */
-  
-     $('#consultation form').validate();
+
 
 
 });

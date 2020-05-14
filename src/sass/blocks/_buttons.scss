@@ -37,7 +37,6 @@
         background-color: #00897b;
     }
     &_submit {
-        display: flex;
-        justify-content: end;
+        background-color: $main-color;
     }
 }
