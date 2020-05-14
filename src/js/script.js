@@ -71,14 +71,41 @@ $(document).ready(function(){
      modalAdd(btn);
      modalAdd(close); */
 
-     $('.button').on('click', () => {
+     $('.button').on('click', () =>{
+         $('.overlay').fadeToggle('overlay_active');
+         $('.modal').fadeToggle('modal_active');
+     })
+     
+     $('.modal__close').on('click', () =>{
         $('.overlay').fadeToggle('overlay_active');
         $('.modal').fadeToggle('modal_active');
+    }) 
 
-     });
-     $('.modal__close').on('click', () => {
-        $('.overlay').fadeToggle('overlay_active');
-        $('.modal').fadeToggle('modal_active');
+    function errorForm(elems){
+        $(elems).validate({
+            rules: {
+               name: "required",
+               phone: "required",
+               email: {
+                required: true,
+                email: true
+               }
+            },
+            messages: {
+                name: "Пожалуйста, введите свое имя",
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Ваша почта должна быть в формате: name@domain.com"
+                }
+              }
+        });
+    }
+    errorForm($('#consultation form'));
+    errorForm($('#order form'));
+    errorForm($('#consultation-form'));
+
+    $('input[name=phone]').mask("+7(999) 999-99-99");
         
      });    
 /* 
