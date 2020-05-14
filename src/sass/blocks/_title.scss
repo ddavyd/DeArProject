@@ -5,6 +5,9 @@
     letter-spacing: 1.5px;
     margin-bottom: 36px;
     text-align: center;
+    &_white {
+        color: #fff;
+    }
 }
 .subtitle {
     color: #212121;
@@ -12,4 +15,7 @@
     font-weight: 400;
     letter-spacing: 0.75px;
     text-align: center;
+    &_white {
+        color: #fff;
+    }
 }

@@ -1,0 +1,82 @@
+.contacts {
+    padding-top: 120px;
+    min-height: 1254px;
+    background: url(../img/last_bg.png) center (center/cover) no-repeat;
+    &__icons {
+        width: 105px;
+        height: 105px;
+        margin-top: 101px;
+        margin-bottom: 39px;
+    }
+    &__labels {
+        display: flex;
+        justify-content: center;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 130px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__data {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        a {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-decoration: none; 
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-input {
+            margin-right: 31px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-inputs {
+            margin-top: 84px;
+            display: flex;
+            justify-content: center;
+            input {
+                width: 500px;
+                height: 84px;
+                border-radius: 10px;
+            }
+        }
+        &__msg {
+            margin-top: 33px;
+            width: 1031px;
+            height: 323px;
+            border-radius: 10px;
+        }
+    }
+    &__btn {
+        margin-top: 39px;
+        display: flex;
+        justify-content: right;
+    }
+    .error {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dear Agency</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -45,17 +46,25 @@
             <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque autem ipsam enim sunt voluptate facilis vel consectetur nulla, perferendis quam neque sit dolorem dolor earum, ad ullam laboriosam! Ad.</div>
             <div class="about__items">
                 <div class="about__item">
-                    <img src="icons/about/1.png" alt="1" class="about__img">
+                    <div class="about__img">
+                        <img src="icons/about/1.png" alt="1" class="about__img">
+                    </div>
+                    
                     <div class="about__title">Lorem</div>
                     <div class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae</div>
                 </div>
                 <div class="about__item">
-                    <img src="icons/about/2.png" alt="2">
+                    <div class="about__img">
+                        <img src="icons/about/2.png" alt="2">
+                    </div>
+                    
                     <div class="about__title">Lorem</div>
                     <div class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum deleniti </div>
                 </div>
                 <div class="about__item">
-                    <img src="icons/about/3.png" alt="3">
+                    <div class="about__img">
+                        <img src="icons/about/3.png" alt="3">
+                    </div>
                     <div class="about__title">Полная поддержка</div>
                     <div class="subtitle">Мы сопровождаем клиента на всем пути с момента заказа и до конечного продукта</div>
                 </div>
@@ -498,20 +507,112 @@
 		</div> 
 		<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 		<form class="feed-form" action="#">
-			<input name="name" required type="text" placeholder="Ваше имя">
-			<input name="phone" required type="phone" placeholder="Ваше телефон">
-			<input name="email" required type="email" placeholder="Ваше e-mail">
+			<div class="modal__items">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" type="phone" placeholder="Ваше телефон">
+                <input name="email" type="email" placeholder="Ваше e-mail">
+            </div>
 			
 			<button class="button button_submit">заказать консультацию</button>
 		</form>
-    </div>
-    </div>
+	</div>
+</div>
+
+    <section class="team">
+        <div class="container">
+            <div class="title">Our Team Member</div>
+            <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+            <div class="team__items">
+                <div class="team__item">
+                    <div class="team__img">
+                        <img src="img/team/artem.jpg" alt="">
+                    </div>
+                    <div class="name">Артем</div>
+                    <div class="position">Web-developer</div>
+                    <div class="socialNetworks">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <div class="team__img">
+                        <img src="img/team/den.jpeg" alt="">
+                    </div>
+                    <div class="name">Денис</div>
+                    <div class="position">Web-developer</div>
+                    <div class="socialNetwork">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <div class="team__img">
+                        <img src="img/team/sasha.jpeg" alt="">
+                    </div>
+                    <div class="name">Шуня</div>
+                    <div class="position">UI/UX design</div>
+                    <div class="socialNetwork">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+    </section>
+
+
+    <section class="contacts">
+        <div class="container">
+            <div class="title title_white">Свяжитесь с нами</div>
+            <div class="subtitle subtitle_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+
+            <div class="contacts__labels">
+                <div class="contacts__label">
+                    <div class="contacts__icons"><img src="img/contacts/geo.png" alt="geo"></div>
+                    <div class="contacts__data">Россия, г.Краснодар</div>
+                </div>
+                <div class="contacts__label">
+                    <div class="contacts__icons"><img src="img/contacts/phone.png" alt="phone"></div>
+                    <div class="contacts__data">
+                     <a href="tel:+79183175377">+7-(918)-317-53-77</a> <br>
+                     <a href="tel:+79964068139">+7-(996)-406-81-39</a>
+                    </div>
+                </div>
+                <div class="contacts__label">
+                    <div class="contacts__icons"><img src="img/contacts/mail.png" alt="mail"></div>
+                    <div class="contacts__data">dear.agency@mail.ru</div>
+                </div>
+            </div>
+
+            <form action="#" class="contacts__form" id="contacts__form">
+                <div class="contacts__form-inputs">
+                    <div class="contacts__form-input">
+                        <input name="name" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="contacts__form-input">
+                        <input name="phone" type="phone" placeholder="Ваше телефон">
+                    </div>
+                    
+                </div>
+                <input type="text" placeholder="Ваше сообщение" class="contacts__form__msg"> 
+
+                <div class="contacts__btn">
+                    <button class="button button_last" type="submit">отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ab2740276.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

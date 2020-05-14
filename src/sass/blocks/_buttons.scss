@@ -36,4 +36,13 @@
     &_green {
         background-color: #00897b;
     }
+    &_submit {
+        background-color: $main-color;
+    }
+    &_last {
+        width: 220px;
+        height: 70px;
+        background-color: #fff;
+        color: #000;
+    }
 }
