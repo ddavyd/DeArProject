@@ -72,13 +72,13 @@ $(document).ready(function(){
      modalAdd(close); */
 
      $('.button').on('click', () =>{
-         $('.overlay').fadeToggle('overlay_active');
-         $('.modal').fadeToggle('modal_active');
+         $('.overlay').fadeIn('overlay_active');
+         $('.modal').fadeIn('modal_active');
      })
      
      $('.modal__close').on('click', () =>{
-        $('.overlay').fadeToggle('overlay_active');
-        $('.modal').fadeToggle('modal_active');
+        $('.overlay').fadeOut('overlay_active');
+        $('.modal').fadeOut('modal_active');
     }) 
 
     function errorForm(elems){
