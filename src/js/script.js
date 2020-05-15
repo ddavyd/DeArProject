@@ -71,16 +71,12 @@ $(document).ready(function(){
      modalAdd(btn);
      modalAdd(close); */
 
-     $('.button').on('click', () =>{
-         $('.overlay').fadeIn('overlay_active');
-         $('.modal').fadeIn('modal_active');
-     });
-     
-     $('.modal__close').on('click', () =>{
-        $('.overlay').fadeOut('overlay_active');
-        $('.modal').fadeOut('modal_active');
-    });
-
+     $('[data-modal=consultation]').on('click', () => {
+        $('.overlay, #consultation').fadeIn();
+    })
+    $('.modal__close ').on('click', () => {
+        $('.overlay, #consultation, #thanks').fadeOut();
+    })
     function errorForm(elems){
         $(elems).validate({
             rules: {
@@ -115,11 +111,29 @@ $(document).ready(function(){
     }
     });
 
-    $('#up').click(function() {
-		$('html, body').animate({scrollTop: 0},500);
-		return false;
-	})
+        
+    $("#up").click(function(){
+        $("html, body").animate({scrollTop: 0}, 500);
+        return false;
+    });
 
+    
+
+     $('form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+            $('form').trigger('reset');
+        });
+        return false;
+    })
+    
 });
 
     
