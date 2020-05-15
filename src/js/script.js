@@ -134,6 +134,22 @@ $(document).ready(function(){
         return false;
     })
     
+    let hamb = document.querySelector(".hamburger"),
+    menu = document.querySelector(".header__menu"),
+    menuItem = document.querySelectorAll(".header__items");
+
+    hamb.addEventListener('click', () => {
+        hamb.classList.toggle('hamburger_active');
+        menu.classList.toggle('header__menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamb.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__menu_active');
+        })
+    })
+
 });
 
     
