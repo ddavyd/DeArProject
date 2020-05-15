@@ -1,3 +1,75 @@
+@media (max-width: 1200px) {
+
+    .header {
+        &__menu{
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .works {
+        &-item {
+            width: 310px; 
+            &__img {
+                width: 310px;
+            }
+        }
+        
+    }
+
+    .services {
+        &__items {
+            justify-content: center;
+        }
+        &__item {
+            max-width: 315px;
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        
+    
+        }
+        &__txt {
+            font-size: 12px;
+        }
+    }
+
+    .price  {
+        &__item {
+            margin-right: 20px;
+            width: 310px;
+            
+            &_header {
+                width: 310px;
+            }
+        }
+        
+    }
+    .team {
+        &__img {
+            width: 330px;
+            height: 270px;
+        }
+    }
+    .contacts {
+        &__form {
+            &-input {
+               input {
+                width: 450px;
+               }
+                
+            }
+            &__msg {
+                width: 943px; 
+            }
+        }
+        }
+        
+}
+
+
 @media (max-width: 1024px) {
     .header {
         &__menu {
