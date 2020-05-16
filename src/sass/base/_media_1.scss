@@ -110,10 +110,10 @@
         &-item {
             width: 265px;
         }
-        &__img {
+            &__img {
             width: 265px;
             height: 320px;
-        }
+             }
     }
     .price {
         &__item {
@@ -162,6 +162,8 @@
         } 
     }
 }
+
+
  
 @media (max-width: 767px) {
     .header {
