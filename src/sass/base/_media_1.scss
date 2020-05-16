@@ -110,10 +110,10 @@
         &-item {
             width: 265px;
         }
-        &__img {
+            &__img {
             width: 265px;
             height: 320px;
-        }
+             }
     }
     .price {
         &__item {
@@ -162,6 +162,99 @@
         } 
     }
 }
+
+@media (max-width: 886px) {
+    .header {
+        &__menu {
+            li {
+                font-size: 14px;
+                margin-left: 20px;
+            }
+        }
+        ul {
+            padding-inline-start: 10px;
+        }
+    }
+    .about {
+        padding: 45px 0 35px 0;
+    }
+    .services {
+        padding: 45px 0 35px 0;
+        &__txt {
+            font-size: 11px;
+        }
+    }
+    .works {
+        padding: 45px 0 35px 0; 
+        &-item {
+            width: 230px; 
+            &__img {
+                width: 230px;
+                height: 260px;
+            }
+        }
+    }   
+    .price {
+        padding: 35px 0 35px 0;
+        &__item {
+            width: 230px;
+            &_header {
+                width: 230px;
+            }
+        }
+        &__items {
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+        }
+    }
+    .team {
+        padding: 45px 0 0 0;
+        &__img {
+            width: 240px;
+            height: 210px;
+        }
+    }
+    .contacts {
+        &__form {
+            &-inputs {
+                input {
+                    width: 340px;
+                }
+            }
+            &__msg {
+                width: 711px;
+            }
+        }
+        &__label {
+            margin-right: 90px;
+        }
+        &__data {
+            font-size: 16px;
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+    .modal {
+    width: 380px;
+    min-height: 530px;
+    padding: 38px 40px 20px 40px;
+    &__subtitle {
+        font-size: 18px;
+    }
+    .feed-form {
+        padding-bottom: 10px;
+        height: 250px;
+        input{
+            margin-bottom: 5px;
+            padding-left: 15px;
+            height: 40px;
+        }
+    }
+    }
+}
+
  
 @media (max-width: 767px) {
     .header {
