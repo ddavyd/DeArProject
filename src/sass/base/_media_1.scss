@@ -175,27 +175,27 @@
 		width: 50%;
 		height: 100vh;
 		padding: 20px 15px;
-		background-color: rgba(0,0,0, .8);
+		background-color: rgba(0,0,0, .9);
 		transition: 0.6s all;
 		&_active {
             left: 0;
         }
-		&_item {
+        }
+        &__items {
 			padding-right: 0;
 			border: none;
             margin-top: 10px;
         }
-		li {
+        &__link {
             font-size: 20px;
             color: #fff;
             
-        }
         }
         .hamburger {
             display: block;
             position: absolute;
             right: 10px;
-            top: 50%;
+            top: 5%;
             transform: translateX(-50%);
             width: 26px;
             height: 12px;
@@ -203,7 +203,7 @@
                 display: block;
                 height: 2px;
                 width: 100%;
-                background-color: #fff;
+                background-color: #000;
                 margin-bottom: 2px;
                 transition: 0.6s all;
             }

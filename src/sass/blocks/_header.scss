@@ -1,10 +1,17 @@
 .header {
-	max-height: 123px;
+	position: relative;
+	height: 56px;
+	nav{
+		position: fixed;
+		height: 60px;
+		width: 100%;
+		background-color: $main-color;
+		z-index: 5;
+	}
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 30px;
 	}
 	&__menu {
 		display: flex;
@@ -16,9 +23,9 @@
 		}
 	}	
 	&__logo {
-		img {
-			height: 100%;
-		}
+		width: 124px;
+		height: 24px;
+		
 	}
 	&__link {
 		color: #212121;
