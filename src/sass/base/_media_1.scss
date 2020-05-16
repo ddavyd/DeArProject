@@ -6,6 +6,10 @@
                 font-size: 16px;
             }
         }
+        &__logo {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
     }
 
     .works {
@@ -76,6 +80,10 @@
             li {
                 font-size: 14px;
             }
+        }
+        &__logo {
+            margin-top: 15px;
+            margin-left: 15px;
         }
     }
     .about {
@@ -154,6 +162,7 @@
         right: 10px;
     }
     .modal {
+        min-height: 520px;
         .feed-form {
             height: 215px;
         }
@@ -450,8 +459,56 @@
     .modal {
         padding-top: 10px;
         padding-bottom: 10px;
-        min-height: 454px;
+        min-height: 475px;
         width: 340px;
         
+    }
+    
+}
+
+@media (max-width: 424px) {
+    .contacts {
+        &__form {
+            &-inputs {
+                input {
+                    width: 348px;
+                }
+            }  
+            &__msg {
+                width: 348px;
+            } 
+        }
+        
+        &__label {
+            margin-right: 12px;
+        }
+        &__data {
+            font-size: 10px;
+            a {
+                font-size: 10px;
+                }
+            } 
+    }
+
+    .works {
+        padding: 45px 0 35px 0; 
+        &-item {
+            width: 228px; 
+            &__img {
+                width: 228px;
+                height: 260px;
+            }
+        }
+    }  
+    .modal {
+        min-height: 526px;
+        width: 269px;
+
+        .feed-form {
+            height: 215px;
+        }
+        label.error {
+            margin-bottom: 10px;
+        } 
     }
 }
