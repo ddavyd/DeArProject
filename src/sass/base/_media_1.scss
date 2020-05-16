@@ -218,8 +218,10 @@
     .contacts {
         &__form {
             &-inputs {
+                flex-direction: column;
                 input {
-                    width: 407px;
+                    width: 711px;
+                    margin-bottom: 30px;
                 }
             }
             &__msg {
@@ -431,6 +433,10 @@
             &-input {
                 margin: 0 auto;
                 margin-bottom: 20px;
+                input {
+                    width: 407px;
+                    margin-bottom: 20px;
+                }
             }
         }
         &__label {
