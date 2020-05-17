@@ -158,6 +158,9 @@
         label.error {
             margin-bottom: 10px;
         } 
+        &__mini {
+            min-height: 212px;
+        }
     }
 }
 
@@ -251,6 +254,9 @@
             padding-left: 15px;
             height: 40px;
         }
+    }
+    &__mini {
+        min-height: 174px;
     }
     }
 }
@@ -447,7 +453,9 @@
         padding-bottom: 10px;
         min-height: 475px;
         width: 340px;
-        
+        &__mini {
+            min-height: 130px;
+        }
     }
     
 }
@@ -497,5 +505,8 @@
         label.error {
             margin-bottom: 10px;
         } 
+        &__mini {
+            min-height: 110px;
+        }
     }
 }
