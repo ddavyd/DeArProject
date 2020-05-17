@@ -4,7 +4,29 @@
         display: flex;
         margin-top: 124px;
         justify-content: space-between;
+        
 
+    }
+    &__img {
+        &_animated {
+            animation-name: planet;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        &_animated_people {
+            animation-name: people;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        &_animated_brain {
+            animation-name: brain;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        
     }
     &__item {
         max-width: 254px;
@@ -26,5 +48,6 @@
         font-weight: 400;
         letter-spacing: 0.75px;
     }
+    
    
 }

@@ -9,6 +9,12 @@
         font-weight: 400;
         text-align: center;
         letter-spacing: 2px;
+        transition: 2s all;
+        &_animated {
+            &:hover {
+                transform: translateY(-20px);
+            }
+        }
     }
     &__subtitle {
         color: #ffffff;
