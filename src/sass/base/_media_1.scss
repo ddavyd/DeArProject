@@ -1,5 +1,4 @@
 @media (max-width: 1200px) {
-
     .header {
         &__menu{
             li {
@@ -7,7 +6,6 @@
             }
         }
     }
-
     .works {
         &-item {
             width: 310px; 
@@ -15,9 +13,7 @@
                 width: 310px;
             }
         }
-        
     }
-
     .services {
         &__items {
             justify-content: center;
@@ -28,14 +24,11 @@
             &:last-child {
                 margin-right: 0;
             }
-        
-    
         }
         &__txt {
             font-size: 12px;
         }
     }
-
     .price  {
         &__item {
             margin-right: 20px;
@@ -45,7 +38,6 @@
                 width: 310px;
             }
         }
-        
     }
     .team {
         &__img {
@@ -58,17 +50,14 @@
             &-input {
                input {
                 width: 450px;
-               }
-                
+               }       
             }
             &__msg {
                 width: 943px; 
             }
         }
-        }
-        
+    }
 }
-
 
 @media (max-width: 1024px) {
     .header {
@@ -154,6 +143,7 @@
         right: 10px;
     }
     .modal {
+        min-height: 520px;
         .feed-form {
             height: 215px;
         }
@@ -326,10 +316,7 @@
             display: block;
         }
         } 
-        &__logo {
-            margin-top: 13px;
-            margin-left: 12px;
-        }  
+          
     }
     .button {
         font-size: 13px;
@@ -456,8 +443,56 @@
     .modal {
         padding-top: 10px;
         padding-bottom: 10px;
-        min-height: 454px;
+        min-height: 475px;
         width: 340px;
         
+    }
+    
+}
+
+@media (max-width: 424px) {
+    .contacts {
+        &__form {
+            &-inputs {
+                input {
+                    width: 348px;
+                }
+            }  
+            &__msg {
+                width: 348px;
+            } 
+        }
+        
+        &__label {
+            margin-right: 12px;
+        }
+        &__data {
+            font-size: 10px;
+            a {
+                font-size: 10px;
+                }
+            } 
+    }
+
+    .works {
+        padding: 45px 0 35px 0; 
+        &-item {
+            width: 228px; 
+            &__img {
+                width: 228px;
+                height: 260px;
+            }
+        }
+    }  
+    .modal {
+        min-height: 526px;
+        width: 269px;
+
+        .feed-form {
+            height: 215px;
+        }
+        label.error {
+            margin-bottom: 10px;
+        } 
     }
 }
