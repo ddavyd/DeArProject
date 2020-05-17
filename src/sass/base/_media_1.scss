@@ -12,9 +12,9 @@
     .works {
         &-item {
             width: 310px; 
-            &__img {
-                width: 310px;
-            }
+        }
+        &__img {
+            width: 310px;
         }
     }
     .services {
@@ -108,10 +108,9 @@
         &-item {
             width: 265px;
         }
-            &__img {
+        &__img {
             width: 265px;
-            height: 320px;
-             }
+        }
     }
     .price {
         &__item {
@@ -187,10 +186,9 @@
         padding: 45px 0 35px 0; 
         &-item {
             width: 230px; 
-            &__img {
-                width: 230px;
-                height: 260px;
-            }
+        }
+        &__img {
+            width: 230px;
         }
     }   
     .price {
@@ -364,15 +362,11 @@
     .works {
         padding: 30px 0 30px 0;
         &-item {
-            margin-left: 10px;
             margin-bottom: 20px;
-            &:nth-child(3){
-                margin-left: 0;
-            }
-            &__img {
-                width: 267px;
-            }
         }
+        &__img {
+                width: 227px;
+            }
         &__tabs {
             justify-content: space-between;
         }
