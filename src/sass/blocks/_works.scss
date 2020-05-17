@@ -34,34 +34,22 @@
     &__content {
         margin-top: 80px;
         display: none;
-        justify-content: space-between;
-        flex-wrap: wrap;
         transition: 0.5s all;
         &_active {
             display: flex;
-            align-items: center;
-            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-        &-block {
-            display: flex;
-            flex-direction: column;
-
-            justify-content: space-between;
-        }
-        &-line {
-            display: flex;
-        }
+        
     }
     &-item {
         width: 370px;
+        margin-right: 21px;
         padding-bottom: 9px;
         border: 2px solid #8a8a8a;
-        margin-bottom: 30px;
-        margin-left: 25px;
+        margin-bottom: 20px;
         overflow: hidden;
-        &:first-child {
-            margin-left: 0;
-        }
+        
         hr {
             width: 270px;
         }

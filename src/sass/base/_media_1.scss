@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
     .header {
         &__menu{
             li {
@@ -47,13 +50,19 @@
     }
     .contacts {
         &__form {
+            max-width: 842px;
+            justify-content: space-between;
+            &-inputs {
+                
+                justify-content: space-between;
+            }
             &-input {
                input {
-                width: 450px;
+                width: 400px;
                }       
             }
             &__msg {
-                width: 943px; 
+                width: 842px; 
             }
         }
     }
@@ -207,6 +216,7 @@
     }
     .contacts {
         &__form {
+            max-width: 711px;
             &-inputs {
                 flex-direction: column;
                 input {
@@ -353,15 +363,12 @@
     }
     .works {
         padding: 30px 0 30px 0;
-        &__content {
-            flex-direction: column;
-            &-line {
-                flex-direction: column;
-            }
-        }
         &-item {
-            margin: 0 auto;
+            margin-left: 10px;
             margin-bottom: 20px;
+            &:nth-child(3){
+                margin-left: 0;
+            }
             &__img {
                 width: 267px;
             }
@@ -370,7 +377,8 @@
             justify-content: space-between;
         }
         &__tab {
-            font-size: 10px;
+            font-size: 9px;
+            font-weight: 300;
             &:first-child{
                 margin-left: 15px;
             }
@@ -411,6 +419,7 @@
     .contacts {
         padding: 30px 0 30px 0;
         &__form {
+            max-width:  407px;
             &__msg {
                 width: 407px;
             }
@@ -418,7 +427,6 @@
                 flex-direction: column;
             }
             &-input {
-                margin: 0 auto;
                 margin-bottom: 20px;
                 input {
                     width: 407px;
@@ -453,6 +461,7 @@
 @media (max-width: 424px) {
     .contacts {
         &__form {
+            max-width: 348px;
             &-inputs {
                 input {
                     width: 348px;

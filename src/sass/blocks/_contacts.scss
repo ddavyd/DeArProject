@@ -35,12 +35,13 @@
         }
     }
     &__form {
+        max-width: 1035px;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         flex-direction: column;
         &-input {
-            margin-right: 31px;
+            display: flex;
             &:last-child {
                 margin-right: 0;
             }
@@ -48,7 +49,7 @@
         &-inputs {
             margin-top: 84px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             input {
                 width: 500px;
                 height: 84px;

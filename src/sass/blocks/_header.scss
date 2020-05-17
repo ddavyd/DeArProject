@@ -5,7 +5,7 @@
 		position: fixed;
 		height: 62px;
 		width: 100%;
-		background-color: $main-color;
+		background-color: rgb(0, 137, 123);
 		z-index: 10;
 	}
 	&__content {
@@ -13,6 +13,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		ul {
+			margin: 0 auto;
+		}
 	}
 	&__menu {
 		display: flex;
