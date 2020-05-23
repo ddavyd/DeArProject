@@ -1,13 +1,28 @@
 .header {
-	position: relative;
-	height: 62px;
-	nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 16px;
+	z-index: 10;
+	background-color: transparent;
+	webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+  	transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+	&_active {
+		background-color: #ffffff;
+		padding: 0 0;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+		-ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+		-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+	}
+	/* nav{
 		position: fixed;
 		height: 62px;
 		width: 100%;
-		background-color: rgb(0, 137, 123);
 		z-index: 10;
-	}
+	} */
 	&__content {
 		height: 62px;
 		display: flex;
@@ -32,7 +47,10 @@
 		
 	}
 	&__link {
-		color: #212121;
+		color: #fff;
+		&_active {
+			color: black;
+		}
 	}
 	.hamburger {
 		display: none;

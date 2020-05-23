@@ -1,5 +1,26 @@
+
 $(document).ready(function(){
-     
+    $(window).scroll(function(){
+
+		var wScroll = $(this).scrollTop();
+
+		// Activate menu
+		if (wScroll > 20) {
+            $('.header').addClass('header_active');
+            $('.header__link').addClass('header__link_active');
+		}
+		else {
+            $('.header').removeClass('header_active');
+            $('.header__link').removeClass('header__link_active');
+		}
+
+
+		//Scroll Effects
+
+    });
+    
+
+
     $('ul.works__tabs').on('click', 'li:not(.works__tab_active)', function() {
     $(this)
         .addClass('works__tab_active').siblings().removeClass('works__tab_active')
@@ -73,10 +94,10 @@ $(document).ready(function(){
 
      $('[data-modal=consultation]').on('click', () => {
         $('.overlay, #consultation').fadeIn();
-    })
+    });
     $('.modal__close ').on('click', () => {
         $('.overlay, #consultation, #thanks').fadeOut();
-    })
+    });
     function errorForm(elems){
         $(elems).validate({
             rules: {
@@ -132,7 +153,7 @@ $(document).ready(function(){
             $('form').trigger('reset');
         });
         return false;
-    })
+    });
     
     let hamb = document.querySelector(".hamburger"),
     menu = document.querySelector(".header__menu"),
@@ -147,8 +168,8 @@ $(document).ready(function(){
         item.addEventListener('click', () => {
             hamb.classList.toggle('hamburger_active');
             menu.classList.toggle('header__menu_active');
-        })
-    })
+        });
+    });
 
     new WOW().init();
 });
