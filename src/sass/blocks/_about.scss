@@ -48,6 +48,12 @@
         font-weight: 400;
         letter-spacing: 0.75px;
     }
-    
+    hr {
+        height: 1px;
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+        background-color: $main-color;
+    }
    
 }
